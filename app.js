@@ -77,11 +77,14 @@ function initApp() {
   //loopThroughFiveLastYears();
   //logNumbers();
   //iterationLoop();
-  teachersOver40();
+  //teachersOver40();
+  //forOfSearchTeachersByName("ras")
+  whileTeachersLength()
+  whileTeacherIsLecturer()
 }
 
 // ========== forEach ========== //
-
+/*
 function loopThroughNames() {
   names.forEach(showName);
 }
@@ -162,6 +165,22 @@ function teachersOver40() {
     }
   console.log(results);
 }
+
+
+function forOfSearchTeachersByName(searchValue) {
+  searchValue = searchValue.toLowerCase()
+
+const results = []
+for (const teacher of teachers) {
+  const name = teacher.name.toLowerCase()
+  if  (name.includes(searchValue)) {
+    results.push(teacher);
+  }
+}
+console.log(results)
+}
+*/
+
 // ========== for loop ========== //
 //* for (let index = 0; index < names.length; index++) {
 //  const name = names[index];
@@ -175,6 +194,28 @@ function teachersOver40() {
 
 // ========== while loops ========== //
 
+function whileTeachersLength(){
+const name = [teachers]
+
+let index = 0;
+
+while (index < names.length) {
+    const name = names[index];
+    console.log(name);
+    index++;
+}
+}
+/* function whileTeacherIsLecturer(){
+const name = [teachers]
+
+let index = 0;
+
+while (index < names.length) {
+    const name = names[index];
+    console.log(name);
+    index++;
+}
+}
 // ========== Filter items: array.filter(...) ========== //
 
 // ========== Sorting: array.sort() ========== //
